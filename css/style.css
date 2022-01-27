@@ -1,0 +1,19 @@
+/* Nav styles */
+.nav{
+   background: #1A1630;
+}
+body{
+    background: #28253D;
+}
+.hero{
+    position: absolute;
+width: 1116px;
+height: 475px;
+left: 162px;
+top: 124px;
+
+/* Brand/Primary/Shade 2 */
+
+background: #1A1630;
+border-radius: 25px;
+}
