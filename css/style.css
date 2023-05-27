@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
  .fadein{
-    opacity: 0;
+    display: hide;
     
  }
 /* nav bar */
