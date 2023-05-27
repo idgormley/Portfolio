@@ -3,8 +3,7 @@ html {
 }
 
 .fade {
-    visibility: hidden;
-}
+display: none;}
 
 /* nav bar */
 
