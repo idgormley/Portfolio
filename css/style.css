@@ -237,16 +237,21 @@ h4, .h4 {
         position: relative;
         left: 124px;
         margin: unset;
+        width: fit-content;
     }
 
     #hero h3 {
         position: relative;
         left: 204px;
         margin: unset;
+        width: fit-content;
+
     }
 
     #hero p {
         position: relative;
+        width: fit-content;
+
         left: 238px;
         width: 55%;
         margin: unset;
