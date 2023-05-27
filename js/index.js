@@ -20,39 +20,39 @@ $(document).ready(function () {
     });
 
 
-    $(window).scroll(function () {
-        if ($(this).scrollTop() > 10) {
-            $('#skill').fadeIn();
+    // $(window).scroll(function () {
+    //     if ($(this).scrollTop() > 10) {
+    //         $('#skill').fadeIn();
 
-        } else {
-            $('#skill').fadeOut();
-        }
-        if ($(this).scrollTop() > 400) {
-            $('#work').fadeIn();
-        } else {
-            $('#work').fadeOut();
-        }
+    //     } else {
+    //         $('#skill').fadeOut();
+    //     }
+    //     if ($(this).scrollTop() > 400) {
+    //         $('#work').fadeIn();
+    //     } else {
+    //         $('#work').fadeOut();
+    //     }
 
-        if ($(this).scrollTop() > 500) {
-            $('#case1').fadeIn();
-        } else {
-            $('#case1').fadeOut();
-        }
+    //     if ($(this).scrollTop() > 500) {
+    //         $('#case1').fadeIn();
+    //     } else {
+    //         $('#case1').fadeOut();
+    //     }
 
-        if ($(this).scrollTop() > 1000) {
-            $('#case2').fadeIn();
-        } else {
-            $('#case2').fadeOut();
-        }
+    //     if ($(this).scrollTop() > 1000) {
+    //         $('#case2').fadeIn();
+    //     } else {
+    //         $('#case2').fadeOut();
+    //     }
 
-        if ($(this).scrollTop() > 1500) {
-            $('#case3').fadeIn();
-        } else {
-            $('#case3').fadeOut();
-        }
+    //     if ($(this).scrollTop() > 1500) {
+    //         $('#case3').fadeIn();
+    //     } else {
+    //         $('#case3').fadeOut();
+    //     }
 
 
-    });
+    // });
 });
 // function menuButton{
 //     console.log('clicked button');
