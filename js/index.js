@@ -1,5 +1,6 @@
 $(document).ready(function () {
     console.log("Your index.js file is loaded correctly")
+
     $(window).scroll(function () {
         $('.fadein').each(function (i) {
             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
@@ -9,4 +10,7 @@ $(document).ready(function () {
             }
         });
     });
+        $('.fadeonload').each( function(i){
+            $(this).animate({'opacity':'1','margin-left':'0px'},1000);
+        }); 
 });
