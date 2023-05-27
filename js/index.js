@@ -1,15 +1,16 @@
 $(document).ready(function () {
     console.log("Your index.js file is loaded correctly")
 
-    $(window).scroll(function () {
-        
-        $('.fade').each(function (i) {
-            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
-            if (bottom_of_window > bottom_of_element) {
-                $(this).fadeIn();
-            }
-        });
-    });
-  
+   $(window).scroll(function () {
+    console.log($(window).scrollTop());
+    var topDivHeight = $(this).height();
+    var viewPortSize = $(window).height();
+    var triggerAt = 150;
+    var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
+
+    if ($(window).scrollTop() >= triggerHeight) {
+        $('.fade').css('visibility', 'visible').hide().fadeIn();
+        $(this).off('scroll');
+    }
+});
 });
