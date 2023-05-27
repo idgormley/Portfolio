@@ -2,7 +2,9 @@ html {
     scroll-behavior: smooth;
 }
 
-
+.fade {
+display: none;
+}
 
 /* nav bar */
 
