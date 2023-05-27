@@ -6,7 +6,7 @@ $(document).ready(function () {
             var bottom_of_element = $(this).offset().top;
             var bottom_of_window = $(window).scrollTop() + ($(window).height()/2);
             if (bottom_of_window > bottom_of_element) {
-                $(this).fadeIn("slow");
+                $(this).animate({'opacity':'1'},1000);
             }
         });
     });
