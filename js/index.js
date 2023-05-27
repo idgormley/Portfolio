@@ -1,16 +1,29 @@
 $(document).ready(function () {
     console.log("Your index.js file is loaded correctly")
 
-   $(window).scroll(function () {
-    console.log($(window).scrollTop());
-    var topDivHeight = $(this).height();
-    var viewPortSize = $(window).height();
-    var triggerAt = 150;
-    var triggerHeight = (topDivHeight - viewPortSize) + triggerAt;
+    $(window).scroll(function () {
+        $('.fade').each(function (i) {
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_element) {
+                $(this).fadeIn();
+            }
+        });
+    });
+ 
 
-    if ($(window).scrollTop() >= triggerHeight) {
-        $('.fade').css('visibility', 'visible').hide().fadeIn();
-        $(this).off('scroll');
-    }
-});
+    // function menuButton{
+    //     console.log('clicked button');
+
+    //     let menubar = document.getElementById('menubar')
+
+    //     console.log(menubar)
+
+    //     // if (menubar.style.visibility === 'visible') {
+    //     //     menubar.style.visibility = 'hidden';
+    //     // } else if (menubar.style.visibility === 'hidden') {
+    //     //     menubar.style.visibility = 'visible';
+    //     // }
+    //     menubar.style.visibility='visible'? resume.style.visibility='hidden' : resume.style.visibility='visible';
+    // }
 });
